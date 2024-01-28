@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1>Async Learning</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+
+    const startInterval = function() {
+        console.log("Ninad", Date.now());
+    }
+    const set = setInterval(startInterval, 2000);    
+
+    start.addEventListener("click", function(e) {
+        console.log("Started");
+        setInterval(startInterval, 500); 
+    });
+
+    const clear = function() {
+        console.log("Stopped!");
+        clearInterval(set);
+    };
+
+    stop.addEventListener("click", function(e) {
+        clear();
+    });
+</script>
+</html>
