@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Tea and Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+
+    // To set custom attributes
+    div.setAttribute("title", "generated title");
+    
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+    // div.innerText = "DOM Learning";
+
+    // here default attributes, overwrites the values by taking that value from selecting it and then set it so it takes 2 rounds.
+    // to reduce this round number, programmers setAttribute. As this directly put values.
+
+    // Making node
+    const addText = document.createTextNode("DOM Learning");
+    div.appendChild(addText); // This method also takes 2 rounds.
+
+    // Here, all changes in div will not be shown on screen because div is created in memory and all changes are in memory not on page.
+    document.body.appendChild(div); // Now you will see this div.
+
+</script>
+</html>

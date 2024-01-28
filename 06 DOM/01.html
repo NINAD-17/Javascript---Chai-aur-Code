@@ -1,0 +1,33 @@
+<!-- In Browser's console -->
+console.log(window); <!-- To see all window object properties -->
+console.log(window.document); <!-- You don't need to write window each time -->
+console.log(document); <!-- You get Html document -->
+console.dir(document); <!-- To get all document properties -->
+
+console.log(document.links); <!-- You will get html collection of all links in that page -->
+<!-- HTML collection, node collection, Arrays are different things so array properties will not work here -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">
+            DOM Learning by YouTube tutorial.
+        </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+</body>
+</html>

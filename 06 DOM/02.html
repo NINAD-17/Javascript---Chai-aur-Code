@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Tea and Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector(".parent");
+    console.log(parent);
+    console.log(parent.children); // HTML collection
+    console.log(parent.children[0]); // To access 1st child
+
+    console.log("---------- Days: ");
+    const childrenArr = Array.from(parent.children);
+    childrenArr.forEach((child) => {
+        console.log(child.innerHTML);
+    });
+
+    parent.children[1].style.color = "orange";
+    console.log("1st element child: ", parent.firstElementChild); // Monday
+    console.log("last element child: ", parent.lastElementChild); // Thursday
+
+    // To get parent element from child element
+    const dayOne = document.querySelector(".day"); // Monday
+    console.log(dayOne);
+    console.log("Parent element: ", dayOne.parentElement);
+    console.log("Next sibling element: ", dayOne.nextElementSibling); // Tuesday
+
+    // -*-*-*-*-*-*-* Interesting Concept *-*-*-*-*-*-*-*-*
+    console.log("NODES: ", parent.childNodes); // It shows all the nodes // 9
+    // we declare only 4 childs but it gives us output 9
+    // Because browser counts nextline (enter after <div> also) so it takes 5 line breaks. It only counts one line break.
+    // therefore, 4 + 5 = 9;
+    // Browser makes very complex tree behind the scenes. Therefore we need more optimized JS. Web isn't optimized.
+    // You can see the output in readme.md
+</script>
+</html>
