@@ -23,3 +23,4 @@
 2. Encapsulation: Wrapping up data
 3. Inheritance: Inherit properties from parent.
 4. Polymorphism: One method can do many things.
+
