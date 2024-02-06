@@ -9,7 +9,7 @@
 - Each operation waits for last one to complete before executing.
 
 ## Synchronous and Asynchronous code
-- Blocking code: You can't able to another task while current task is not active until it's end completely.
+- Blocking code: You can't able to execute another task while current task is not end completely.
 - Non-blocking code: It works continuously until some data is come later.
 
 - Blocking and Non-blocking code both are important. In case of DB registration you've to use blocking code otherwise while registering if an error happens then it's wrong to show message "successful'

@@ -9,7 +9,7 @@
 // Note: JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 
 // Symbol Example
-// Value of symbol is unique. If you pass same value to variables then also actual value is unique.
+// Value of symbol is unique. If you pass same value to variables then also its actual value is unique.
 const id = Symbol('123');
 const anotherId = Symbol('123');
 console.log(id == anotherId);

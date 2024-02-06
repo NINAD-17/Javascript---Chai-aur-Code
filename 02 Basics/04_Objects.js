@@ -21,7 +21,7 @@ const regularUser = {
 }
 
 console.log(regularUser.fullName.userFullName.firstName);
-// Optional Chaining: if fullName isn't exist then? so at that point we've to use ? --> fullName? It's useful in APIs
+// Optional Chaining: what will happen if the fullName isn't exist? so at that point we've to use ? --> fullName? It's useful in APIs
 
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "a", 4: "b" };

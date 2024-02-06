@@ -25,7 +25,7 @@ console.log(document.links); <!-- You will get html collection of all links in t
 
 - `querySelector(element)`: you will get first html of that element.
     - `querySelector('input[type="password"]')`
-    - `querySelector('p:first-child'`
+    - `querySelector('p:first-child')`
 
 - `querySelectorAll('element')`: It will give you all elements
     - You will get NodeList in return. It's like an array but not array.

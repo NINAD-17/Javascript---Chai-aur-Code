@@ -3,7 +3,7 @@
 
 let userEmail = "user@example.com"; 
 
-if(userEmail) { // Here, we not compare any values. We just assume that if there is any value in userEmail then it will definitely true.
+if(userEmail) { // Here, we have not compare any values. We just assume that if there is any value in userEmail then it will definitely true.
     console.log("Got user email");
 } else {
     console.log("Don't have user email");

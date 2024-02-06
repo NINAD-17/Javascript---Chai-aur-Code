@@ -28,6 +28,7 @@ one();
 // two(); // you need to call it from function one() only.
 
 
+// Calling function before that function
 console.log(addOne(5)); // It can't give you any error and execute normally.
 function addOne(num) {
     return num + 1;

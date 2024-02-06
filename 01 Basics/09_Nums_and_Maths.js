@@ -2,7 +2,7 @@ const score = 400;
 console.log(score);
 
 const balance = new Number(100); // To explicitly define datatype as a number
-console.log(balance);;
+console.log(balance);
 
 console.log(balance.toString()); // to make it string
 console.log(typeof balance);

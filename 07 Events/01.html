@@ -41,18 +41,18 @@
 
     // In below code, we target parent and its child so question is that which will run first?
     // Event Propagation: Script tracks elements from inside to outside. and it's called event bubbling
-    // So first owl will pring then ul.
-    // So when you right or don't right(default false) then it's event bubbling
+    // So first owl will print then ul.
+    // So when you write or don't write(default false) then it's event bubbling.
 
     // Capturing mode: It's opposite of event bubbling here, script tracks element from outside to inside.
     // So first will print ul and then owl.
-    // document.getElementById("images").addEventListener("click", function(e) {
-    //     console.log("Clicked inside the ul");
-    // }, false); // see by changing it true
+    document.getElementById("images").addEventListener("click", function(e) {
+        console.log("Clicked inside the ul");
+    }, false); // see by changing it true
 
-    // document.getElementById("owl").addEventListener("click", function(e) {
-    //     console.log("Owl clicked");
-    // }, false); // see by changing it true
+    document.getElementById("owl").addEventListener("click", function(e) {
+        console.log("Owl clicked");
+    }, false); // see by changing it true
 
     // To stop this propagation use e.stopPropagation();
     // It means when you click owl then it will not bubble up and going upward element that is ul. so it will only print owl
@@ -64,10 +64,10 @@
 
 
     // Prevent Default
-    // document.getElementById("google").addEventListener("click", function(e) {
-    //     console.log("Google clicked");
-    //     e.preventDefault();
-    // }, false);
+    document.getElementById("google").addEventListener("click", function(e) {
+        console.log("Google clicked");
+        e.preventDefault();
+    }, false);
 
 
     document.getElementById("images").addEventListener("click", function(e) {

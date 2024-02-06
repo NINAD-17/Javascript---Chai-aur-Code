@@ -30,7 +30,7 @@ console.log(myArr.indexOf(4));
 
 const newArr = myArr.join(); // Adds all elements in string.
 console.log(newArr);
-console.log(typeof newArr);
+console.log(typeof newArr); // string
 
 // Slice and Spice
 // Unlike slice, spice operation manipulates the original array.

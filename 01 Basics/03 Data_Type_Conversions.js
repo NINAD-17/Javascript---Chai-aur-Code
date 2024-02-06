@@ -19,7 +19,7 @@ console.log(valueInNumber); // NaN - Not a Number
 /**
  * "33" => 33
  * "33abc" => NaN
- * true and fale => 1 and 0
+ * true and false => 1 and 0
  * null => 0
  * undefined => NaN
  */

@@ -1,6 +1,6 @@
 # API
 
-- fetch is new methon for api request. Before fetch, xml http request method was used to api request.
+- fetch is new method for api request. Before fetch, xml http request method was used to api request.
 
 ## APIs which aren't part of JavaScript
 - Is the console a part of javascript? It's technically yes and no also.

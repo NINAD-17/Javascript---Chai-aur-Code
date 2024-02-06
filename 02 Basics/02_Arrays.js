@@ -19,8 +19,8 @@ const usable_another_Array = another_Array.flat(Infinity);
 console.log(usable_another_Array);
 
 // Make anyother data type to array
-console.log(Array.isArray("Taehyung"));
-console.log(Array.from("Taehyung"));
+console.log(Array.isArray("Taehyung")); // false
+console.log(Array.from("Taehyung")); 
 console.log(Array.from({name: "Taehyung"})); // It can't able to directly convert to array. So it gives you an empty array
 
 const score1 = 100;

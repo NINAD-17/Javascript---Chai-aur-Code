@@ -13,8 +13,7 @@ for(const key in myObj) {
 }
 
 // In for in loop, it gives keys and not values unlike for of which give values.
-// Key of arrays starts with 0 and by default numbers.
-// therefore object was created to make keys you want for values.
+// Key of arrays starts with 0 and by default numbers. therefore object was created to make keys you want for values.
 const programming = ["js", "py", "cpp", "rb"];
 for(const key in programming) {
     console.log(`${key} ---> ${programming[key]}`);
