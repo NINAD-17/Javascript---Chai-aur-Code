@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body style="background-color: #2e2e2e; color: white;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+
+    /***** Lexical Scoping ****/
+    function init() {
+        let name = "Samsung Internet Browser"; // name is a local variable created by init
+        function displayName() {
+            // displayName() is the inner function, that forms the closure
+            console.log(name); // use variable declared in the parent function
+        }
+    displayName();
+
+    // Function's content isn't accessible outside
+    // When you write a function in a function then they gets separate execution context and same memory
+
+
+    /**** Closure ****/
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+    }
+    init();
+
+    // In above example,
+    // displayName is return as a reference. But after makeFunc() execution that function will flush from memory
+    // But by closure concept, when you return function reference as shown above then it will return whole lexical scope (inner and outer)
+    // So in myFunc variable value get is whole function 'makeFunc'
+    // So that error will not occur
+
+</script>
+
+<!-- Closure Example -->
+<script>
+    // document.getElementById("orange").onclick = function() {
+    //     document.body.style.backgroundColor = "orange";
+    // }
+    // document.getElementById("green").onclick = function() {
+    //     document.body.style.backgroundColor = "green";
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`;
+
+        return function() {
+            document.body.style.backgroundColor = `${color}`;
+        } // Here by lexical scoping with this return function clickHandler function will also return.
+    }
+
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+</script>
+</html>
